@@ -35,10 +35,18 @@ function guardar_mascota() {
 
                 $('#lista_mascotas').prepend(fila);
 
+                Swal.fire({
+                    title: resultado.mensaje,
+                    icon: 'success',
+                });
+
                 $('.eliminar').on('click', eliminar_mascota);
                 $('.editar').off('click').on('click', editar_mascota);
             } else {
-                alert(resultado.mensaje);
+                Swal.fire({
+                    title: resultado.mensaje,
+                    icon: 'error',
+                });
             }
 		}
 	});
