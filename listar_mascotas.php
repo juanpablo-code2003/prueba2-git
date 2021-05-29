@@ -8,11 +8,17 @@ include_once 'consultar_mascotas.php';
     <div class="row">
         <div class="col">
             <h2>Mascotas</h2>
-            <button class="btn btn-success mb-3" data-toggle="modal" data-target="#agregarmascota">Agregar mascota</button>
+            <button class="btn btn-success mb-3" data-toggle="modal" data-target="#agregarmascota">Añadir mascota</button>
 
             <div>
               <strong>BIENVENIDO A NUESTRO SISTEMA DE MASCOTAS</strong>
               <p>No tengo ni idea de si esto funcionara</p>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <h3>Hola esto es una prueba</h3>
+              </div>
             </div>
 
             <table class="table table-bordered">
