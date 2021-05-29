@@ -1,8 +1,9 @@
 <main role="main" class="container my-4">
 
+    <h1>Tabla</h1>
+
     <div class="row">
         <div class="col">
-
             <table class="table table-bordered">
                 <thead class="thead-dark">
                     <tr>

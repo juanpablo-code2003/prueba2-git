@@ -50,7 +50,7 @@ function guardar_mascota() {
 
 function eliminar_mascota() {
     Swal.fire({
-        title: '¿Estás Seguro?',
+        title: '¿Estás Seguro de Eliminar?',
         text: 'Al eliminar la mascota, no se podrá recuperar.',
         icon: 'question',
         showCancelButton: true,
