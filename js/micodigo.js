@@ -1,13 +1,13 @@
-$(document).ready(iniciar);
+$(document).ready(inicio);
 
-function iniciar() {
+function inicio() {
     $('#btn_guardar').on('click', guardar_mascota);
-    $('.eliminar').off('click').on('click', eliminar_mascota);
+    $('.eliminar').off('click').on('click', delete_mascota);
     $('.editar').off('click').on('click', editar_mascota);
 }
 
 function guardar_mascota() {
-    var id = '';
+    // var id = '';
     var nom = $('#nombre').val();
     var edad = $('#edad').val();
     var propietario = $('#propietario').val();
@@ -40,7 +40,7 @@ function guardar_mascota() {
                     icon: 'success',
                 });
 
-                $('.eliminar').on('click', eliminar_mascota);
+                $('.eliminar').on('click', delete_mascota);
                 $('.editar').off('click').on('click', editar_mascota);
             } else {
                 Swal.fire({
@@ -56,7 +56,7 @@ function guardar_mascota() {
     $('#propietario').val('');
 }
 
-function eliminar_mascota() {
+function delete_mascota() {
     Swal.fire({
         title: '¿Estás Seguro de Eliminar?',
         text: 'Al eliminar la mascota, no se podrá recuperar.',
