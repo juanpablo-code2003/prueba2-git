@@ -12,6 +12,7 @@ include_once 'consultar_mascotas.php';
 
             <div>
               <strong>BIENVENIDO A NUESTRO SISTEMA DE MASCOTAS</strong>
+              <p>No tengo ni idea de si esto funcionara</p>
             </div>
 
             <table class="table table-bordered">
