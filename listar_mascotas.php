@@ -71,13 +71,14 @@ include_once 'consultar_propietarios.php';
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Agregar Mascotas</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Añadir Nueva Mascotas</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
         <!-- <form action="guardar.php" method="POST"> -->
           <div class="modal-body">
+            <div class="text-center">FORMULARIO NUEVA MASCOTA</div>
             <div class="form-group">
                 <label for="nombre">Nombre</label>
                 <input required name="nombre" type="text" id="nombre" placeholder="Nombre de mascota" class="form-control">
@@ -87,7 +88,7 @@ include_once 'consultar_propietarios.php';
                 <input required name="edad" type="number" id="edad" placeholder="Edad de mascota" class="form-control">
             </div>
             <div class="form-group">
-                <label for="propi">Propietario</label>
+                <label for="propi">Propietario(s)</label>
                 <select class="form-control" name="propietario" id="propietario">
                      <?php 
                      foreach ($propietarios as $prop) {
@@ -99,7 +100,7 @@ include_once 'consultar_propietarios.php';
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-            <button id="btn_guardar" type="submit" class="btn btn-success" data-dismiss="modal">Guardar</button>
+            <button id="btn_guardar" type="submit" class="btn btn-success" data-dismiss="modal">Añadir</button>
           </div>
         <!-- </form> -->
     </div>
