@@ -9,16 +9,21 @@ include_once 'consultar_mascotas.php';
         <div class="col">
             <h2>Mascotas</h2>
             <button class="btn btn-success mb-3" data-toggle="modal" data-target="#agregarmascota">Agregar mascota</button>
+
+            <div>
+              <strong>BIENVENIDO A NUESTRO SISTEMA DE MASCOTAS</strong>
+            </div>
+
             <table class="table table-bordered">
                 <thead class="thead-dark">
                     <tr>
-                        <th>ID</th>
+                        <th>COD</th>
                         <th>Nombre</th>
                         <th>Edad</th>
-                        <th>Cedula</th>
+                        <th>Cedula Ciudadania</th>
                         <th>Propietario</th>
                         <th>Imagen</th>
-                        <th>Editar</th>
+                        <th>Actualizar</th>
                         <th>Eliminar</th>
                     </tr>
                 </thead>
