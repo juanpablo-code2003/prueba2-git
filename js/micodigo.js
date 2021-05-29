@@ -4,6 +4,7 @@ function inicio() {
     $('#btn_guardar').on('click', guardar_mascota);
     $('.eliminar').off('click').on('click', delete_mascota);
     $('.editar').off('click').on('click', editar_mascota);
+    // Este es un nuevo comentario
 }
 
 function guardar_mascota() {
